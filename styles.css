@@ -40,19 +40,20 @@ h2 {
 }
 
 h3 {
+    font-size: 30px;
     margin-top: 50px;
 }
 
 #activities {
     margin-top: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
 }
 
 .activity-item {
-    width: 150px;
+    width: 200px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -61,8 +62,8 @@ h3 {
 
 .activity-item img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -103,22 +104,27 @@ h3 {
 }
 
 @media (max-width: 768px) {
-      #activities {
+
+    h3 {
+        font-size: 24px;
+        margin: 50px;
+    }
+    #activities {
         flex-direction: column;
-      }
-      #guide {
+    }
+    #guide {
         width: 80%;
         flex-direction: column;
         gap: 20px;
-        padding: 20px;
-      }
-      
-      #guide h3 {
+        padding: 20px 20px 30px 20px;
+    }
+    
+    #guide h3 {
         font-size: 24px;
-      }
-      
-      .guide-text {
+    }
+    
+    .guide-text {
         width: 100%;
-      }
+    }
     }
 
