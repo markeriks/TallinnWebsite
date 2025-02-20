@@ -1,0 +1,124 @@
+/**
+LIGHT: #f5f0df
+LIGHT BLUE: #00b4d8
+DARK BLUE: #023e8a
+
+Tallinn sci-fi vibes: https://media.istockphoto.com/id/148424515/photo/tallinn.jpg?s=612x612&w=0&k=20&c=KbUdRynmOGKl0NHLn7RurNurijSrLG8zf9yZRmHGnhU=
+
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+}
+
+#hero {
+    background-image: url("https://i.imgur.com/f1ivwfD.jpg?1");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    margin-top: 0;
+    width: 250px;
+    padding: 10px 0;
+    background-color: rgb(2, 62, 138, 0.5);
+    color: #ffff;
+    border-radius: 10px;
+}
+
+h2 {
+    width: 80%;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+#activities {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.activity-item {
+    width: 150px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activity-item img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.activity-text {
+    font-size: 14px;
+}
+
+#guide {
+    background-color: #023e8a;
+    width: 80%;
+    margin: 20px auto;
+    color: #ffffff;
+    padding:  40px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+#guide h3 {
+    font-size: 30px;
+}
+
+.guide-text {
+    width: 30%;
+    font-size: 16px;
+}
+
+#guide img {
+    width: 250px;
+    height: 250px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    border-right: 10px solid #065ac4;
+}
+
+@media (max-width: 768px) {
+      #activities {
+        flex-direction: column;
+      }
+      #guide {
+        width: 80%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+      }
+      
+      #guide h3 {
+        font-size: 24px;
+      }
+      
+      .guide-text {
+        width: 100%;
+      }
+    }
+
